@@ -1,0 +1,176 @@
+body {
+  background-color: #fffeec;
+  margin: 0;
+  font-family: "Caveat", cursive;
+}
+.header {
+  height: 200px;
+  width: 100%;
+  background-image: url(../img/cloud1.png) ;
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  color: #f8fbe1;
+}
+
+.main {
+  height: 550px;
+  width: 100%;
+  background-image: url(../img/6509141.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+    position: fixed;
+}
+
+.head-add {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 24px;
+  gap: 64px;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  padding: 24px 64px ;
+}
+
+.login a{
+  color: #f8fbe1;
+  font-size: 24px;
+}
+
+.head-add a{
+  color: #f8fbe1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tours{
+  
+  color: #f8fbe1;
+  font-size: 28px;
+}
+
+.wiper-track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1.5rem;
+  margin: 0 auto;
+  transition: transform 0.4s ease-in;
+  padding: 0 1rem;
+  list-style: none;
+}
+.wiper-item {
+  width: 300px;
+  height: 430px;
+  position: relative;
+  transition: scale 0.2s linear;
+
+}
+.wiper-button img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+.wiper {
+  width: 1300px;
+  position: relative;
+  margin: 0 auto;
+}
+.active-swipe {
+  transform: scale(1.1);
+}
+.wiper-button {
+  margin: 0 1rem;
+  height: 70px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: none;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.wiper-button__left {
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+.wiper__image-button {
+  right: 50%;
+  top: 50%;
+  position: absolute;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  font-size: 1.4rem;
+  transform: translateY(-50%) translateX(50%);
+  cursor: pointer;
+}
+.wiper-wrapper {
+  max-width: 760px;
+  overflow: hidden;
+  padding: 2rem 0.5rem;
+  margin: 0 auto;
+}
+.swiper__image-button {
+  right: 50%;
+  top: 50%;
+  position: absolute;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  transform: translateY(-50%) translateX(50%);
+  cursor: pointer;
+}
+.swiper__image-button:hover {
+  color: red;
+}
+.wiper__image{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  border-radius:30px;
+}
+.is-hidden{
+  display:none;
+}
+
+h2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #2b3f0f;
+}
+
+.active{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.form-back{
+    width: 600px;
+    background-color:#d9e4bf;
+    border-radius: 8px;
+    opacity: 70%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

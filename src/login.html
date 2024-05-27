@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+    <div class="head-add">
+<h1><a href="./index.html">Фестиваль мистецької самодіяльності</a></h1>
+  <a  href="./tours.html" class="tours">Тури</a>
+    </div>
+<div class="login">
+  <a href="./login.html" class="active" id="loginLink">Увійти</a>
+
+  <!--<a href="./signup.html">Реєстрація</a>-->
+    <button id="logoutBtn" style="display: none;">Вийти</button>
+</div>
+  </section>
+  <section class="main">
+    <div class="form">
+    <div class="form-back">
+        <h2>Вхід</h2>
+        <form class="feedback-form" autocomplete="off">
+  <label>
+    Прізвище
+    <input type="text" name="username" class="inp" autofocus/>
+  </label>
+  <label>
+    Пароль
+    <input type="password" name="password" class="inp" autofocus placeholder="*******"/>
+  </label>
+  <button type="submit">Увійти</button>
+</form>
+    </div>
+    </div>
+  </section>
+  <script type="module" src="./js/login.js"></script>
+  <script type="module" src="./js/tours.js"></script>
+</body>
+</html>

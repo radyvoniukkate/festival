@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/tours.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <div class="head-add">
+<h1><a href="./index.html">Фестиваль мистецької самодіяльності</a></h1>
+  <a href="" class="active">Тури</a>
+    </div>
+<div class="login">
+  <a href="./login.html" id="loginLink">Увійти</a>
+  <!--<a href="./signup.html">Реєстрація</a>-->
+  <button id="logoutBtn" style="display: none;">Вийти</button>
+</div>
+  </section>
+ <!-- <section class="main">
+    <h2>Тури</h2>
+    <div class="wiper">
+      <button class="wiper-button wiper-button__right">
+        <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
+      </button>
+      <div class="wiper-wrapper">
+        <ul class="wiper-track">
+          <li class="wiper-item">
+            <img
+              class="wiper__image"
+              src="https://i.pinimg.com/564x/54/7a/02/547a027efb98393bbc665b7e02911f77.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="wiper-item active-swipe">
+            <img
+              class="wiper__image"
+              src="https://i.pinimg.com/564x/70/e3/1d/70e31dcb5d36725bac87dee9533550cc.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="wiper-item">
+            <img
+              class="wiper__image"
+              src="https://i.pinimg.com/564x/fb/67/6d/fb676d2a404b9d3d30241f9935a2bc92.jpg"
+              alt="background-image"
+            />
+          </li>
+        </ul>
+      </div>
+      <button class="wiper-button wiper-button__left">
+        <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="right" />
+      </button>
+    </div>
+  </section>-->
+  <section class="main">
+    <h2>Тури</h2>
+    <div class="tours">
+  <button id="tour1">Тур 1</button>
+  <button id="tour2">Тур 2</button>
+  <button id="tour3">Тур 3</button>
+</div>
+    <div class="sort">
+    <button id="sortBtnId">Сортувати за id</button>
+    <button id="sortBtn">Сортувати за балами</button>
+    <button id="sortBtnDate">Сортувати за датою</button>
+    </div>
+   <div id="table-container">
+        <table id="participantsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ім'я</th>
+                    <th>Пошта</th>
+                    <th>Завдання</th>
+                    <th>Бали</th>
+                    <th>Дата та час виступу</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Рядки з учасниками будуть додані тут -->
+            </tbody>
+        </table>
+    </div>
+    <div class="btns">
+        <button id="addBtn"  style="display: none;">Додати</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="createForm">
+                <input type="hidden" id="participantId" name="participantId">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Пошта:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="task">Завдання:</label>
+                <select id="task" name="task" required>
+                <option value="пейзаж">Пейзаж</option>
+                <option value="натюрморт">Натюрморт</option>
+                <option value="портрет">Портрет</option>
+            </select><br>
+                <label for="score1">Бали 1:</label>
+            <input type="number" id="score1" name="score1" min="0" max="10" required><br>
+            <label for="score2">Бали 2:</label>
+            <input type="number" id="score2" name="score2" min="0" max="10" required><br>
+            <label for="score3">Бали 3:</label>
+            <input type="number" id="score3" name="score3" min="0" max="10" required><br>
+            <label for="score4">Бали 4:</label>
+            <input type="number" id="score4" name="score4" min="0" max="10" required><br>
+                <label for="datetime">Дата та час виступу:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required><br>
+                <button type="submit">Зберегти</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/tours.js" defer></script>
+</body>
+</html>
