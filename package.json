@@ -8,6 +8,7 @@
     "build": "vite build --base=/festival/",
     "preview": "vite preview"
   },
+  
   "devDependencies": {
     "glob": "^8.1.0",
     "vite": "^4.5.2"
